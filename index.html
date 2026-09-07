@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate 3D Action Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- UI Overlay (गेम इंटरफ़ेस) -->
+    <div id="ui-overlay">
+        <div id="crosshair">+</div>
+        <div id="hud">
+            <div id="health-bar-container">
+                <div id="health-bar"></div>
+            </div>
+            <div id="score">Score: <span id="score-val">0</span></div>
+        </div>
+        
+        <!-- शुरुआती स्क्रीन (Story & Start) -->
+        <div id="start-screen">
+            <h1>SHADOW OF LIBERTY</h1>
+            <p class="story">
+                <b>कहानी:</b> दुनिया पर दुश्मन रोबॉट्स का कब्जा हो चुका है। आप आखिरी जीवित योद्धा हैं। 
+                आपका मिशन है इन रोबॉट्स को नष्ट करना और दुनिया को बचाना!
+            </p>
+            <p class="controls-info">
+                <b>कंट्रोल्स:</b><br>
+                [W, A, S, D] - मूवमेंट (आगे, पीछे, बाएं, दाएं)<br>
+                [माउस मूव] - चारों तरफ देखना<br>
+                [माउस क्लिक] - गोली चलाना (Fire)
+            </p>
+            <button id="start-btn">गेम शुरू करें</button>
+        </div>
+    </div>
+
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
